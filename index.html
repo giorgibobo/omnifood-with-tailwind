@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind omnifood</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                backgroundImage:{
+                    "background": "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero.jpg)",
+                    "testimonial": "linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/back-customers.jpg)",                     
+                }                     
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <header class="h-screen bg-fixed bg-center bg-cover bg-background">
+        <div class="flex items-center justify-between w-4/5 pt-8 mx-auto">
+            <img class="w-auto h-24" src="img/logo-white.png" alt="logo">
+            <ul class="flex text-white justify-arround">
+                <li class="mr-4 text-xl"><a class="pb-2 duration-150 border-orange-400 hover:border-b-2" href="">Food delivery</a></li>
+                <li class="mr-4 text-xl"><a class="pb-2 duration-150 border-orange-400 hover:border-b-2" href="">How it works</a></li>
+                <li class="mr-4 text-xl"><a class="pb-2 duration-150 border-orange-400 hover:border-b-2" href="">Our cities</a></li>
+                <li class="mr-4 text-xl"><a class="pb-2 duration-150 border-orange-400 hover:border-b-2" href="">Sign up</a></li>
+            </ul>
+        </div>
+
+        <div class="absolute w-4/5 text-white inset-1/2 -translate-x-2/4 -translate-y-2/4">
+            <h1 class="mb-8 text-6xl">Goodbye junk food. <br> Hello super healthy meals</h1>
+            <button class="h-12 mr-8 bg-orange-400 border-2 border-orange-400 rounded-full w-44">I’m hungry</button>
+            <button class="h-12 text-orange-400 border-2 border-orange-400 rounded-full w-44 hover:bg-orange-400 hover:text-white">Show me more</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="flex flex-col items-center justify-center w-4/5 pt-16 mx-auto">
+           <h1 class="mb-4 text-4xl">Get food fast &mdash; not fast food.</h1>
+           <hr class="w-48 border-2 border-orange-400">
+           <p class="w-3/5 mt-8 text-xl text-center">
+               Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
+            </p>
+        </div>
+
+        <div class="flex justify-between w-3/5 mx-auto mt-4">
+            <div class="p-4">
+                <ion-icon class="text-4xl text-orange-400" name="infinite-outline"></ion-icon>
+                <h3 class="mb-2 text-2xl font-medium">Up to 365 days/year</h3>
+                <p class="text-lg text-justify">
+                    Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+                </p>
+            </div>
+
+
+            <div class="p-4">
+                <ion-icon class="text-4xl text-orange-400" name="time-outline"></ion-icon>
+                <h3 class="mb-2 text-2xl font-medium">Ready in 20 minutes</h3>
+                <p class="text-lg text-justify">
+                    You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                </p>
+            </div>
+            <div class="p-4">
+                <ion-icon class="text-4xl text-orange-400" name="nutrition-outline"></ion-icon>
+                <h3 class="mb-2 text-2xl font-medium">100% organic</h3>
+                <p class="text-lg text-justify">
+                    All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+                </p>
+            </div>
+            <div class="p-4">
+                <ion-icon class="text-4xl text-orange-400" name="cart-outline"></ion-icon>
+                <h3 class="mb-2 text-2xl font-medium">Order anything</h3>
+                <p class="text-lg text-justify">
+                    We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="mt-8 bg-black">
+        <ul class="flex ">
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/1.jpg" alt=""></li>
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/2.jpg" alt=""></li>
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/3.jpg" alt=""></li>
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/4.jpg" alt=""></li>
+        </ul>
+        <ul class="flex">
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/5.jpg" alt=""></li>
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/6.jpg" alt=""></li>
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/7.jpg" alt=""></li>
+            <li class="w-1/4 h-auto overflow-hidden"><img class="duration-300 scale-110 opacity-50 hover:opacity-100 hover:scale-100" src="img/8.jpg" alt=""></li>
+        </ul>
+    </section>
+
+    <section class="pb-24 bg-slate-200">
+        <div class="flex flex-col items-center justify-center w-4/5 pt-16 mx-auto">
+            <h1 class="mb-4 text-4xl">HOW IT WORKS - SIMPLE AS 1, 2, 3</h1>
+            <hr class="w-48 border-2 border-orange-400">
+        </div>
+
+        <div class="flex items-center justify-center mt-20 ml-48 ">
+            <div>
+                <img class="w-56" src="img/app-iPhone.png" alt="">
+            </div>
+
+            <div class="mt-12 text-2xl ">
+                <div class="flex items-center justify-center">
+                    <div class="w-12 h-12 pt-1 text-center border-2 border-orange-400 rounded-full">1</div>
+                    <p class="w-3/5 ml-4">
+                        Choose the subscription plan that best fits your needs and sign up today.
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-center mt-12">
+                    <div class="w-12 h-12 pt-1 text-center border-2 border-orange-400 rounded-full">2</div>
+                    <p class="w-3/5 ml-4">
+                        Order your delicious meal using our mobile app or website. Or you can even call us!
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-center mt-12">
+                    <div class="w-12 h-12 pt-1 text-center border-2 border-orange-400 rounded-full">3</div>
+                    <p class="w-3/5 ml-4">
+                        Enjoy your meal after less than 20 minutes. See you the next time!
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-center w-3/5 mt-12 ml-4 ">
+                    <a href="#">
+                        <img class="h-12" src="img/download-app-android.png" alt="App store Button">
+                    </a>
+                    <a href="#">
+                        <img class="h-12 ml-2" src="img/download-app.svg" alt="Play store Button">
+                    </a>
+
+                </div>
+               
+            </div>
+        </div>
+       
+    </section>
+
+    <section>
+        <div class="flex flex-col items-center justify-center w-4/5 pt-16 mx-auto ">
+            <h1 class="mb-4 text-4xl">WE'RE CURRENTLY IN THESE CITIES</h1>
+            <hr class="w-48 border-2 border-orange-400">
+        </div>
+
+        <div class="flex justify-center mt-12 text-xl">
+            <div class="mr-8">                
+                <img class="w-64 h-auto duration-300 hover:scale-110" src="img/lisbon-3.jpg" alt="Lisbon">
+                <h3 class="mt-4 font-bold"> Lisbon </h3>
+                <div class="mt-4">
+                    <ion-icon class="text-orange-400" name="person-outline"></ion-icon>
+                    1600+ happy eaters
+                </div>
+                
+                <div class="">
+                    <ion-icon class="text-orange-400" name="star-outline"></ion-icon>
+                    60+ top chefs
+                </div>
+                <div class="">
+                    <ion-icon class="text-orange-400" name="logo-twitter"></ion-icon>
+                    @omnifood_lx
+                </div>
+            </div>            
+
+            <div class="mr-8">
+                <img class="w-64 h-auto duration-300 hover:scale-110" src="img/san-francisco.jpg" alt="Lisbon">
+                <h3 class="mt-4 font-bold"> San Francisco </h3>
+                <div class="mt-4">
+                    <ion-icon class="text-orange-400" name="person-outline"></ion-icon>
+                    3700+ happy eaters
+                </div>
+                
+                <div class="">
+                    <ion-icon class="text-orange-400" name="star-outline"></ion-icon>
+                    160+ top chefs
+                </div>
+                <div class="">
+                    <ion-icon class="text-orange-400" name="logo-twitter"></ion-icon>
+                    @omnifood_sf
+                </div>
+            </div>
+                
+            <div class="mr-8">
+                <img class="w-64 h-auto duration-300 hover:scale-110" src="img/berlin.jpg" alt="Berlin">
+                <h3 class="mt-4 font-bold"> Berlin </h3>
+                <div class="mt-4">
+                    <ion-icon class="text-orange-400" name="person-outline"></ion-icon>
+                    2300+ happy eaters
+                </div>
+                <div class="">
+                    <ion-icon class="text-orange-400" name="star-outline"></ion-icon>
+                    110+ top chefs
+                </div>
+                <div class="">
+                    <ion-icon class="text-orange-400" name="logo-twitter"></ion-icon>
+                    @omnifood_berlin
+                </div>
+            </div>
+
+            <div class="">
+                <img class="w-64 h-auto duration-300 hover:scale-110" src="img/london.jpg" alt="London">
+                <h3 class="mt-4 font-bold"> London </h3>
+                <div class="mt-4">
+                    <ion-icon class="text-orange-400" name="person-outline"></ion-icon>
+                    1200+ happy eaters
+                </div>
+                <div class="">
+                    <ion-icon class="text-orange-400" name="star-outline"></ion-icon>
+                    50+ top chefs
+                </div>
+                <div class="">
+                    <ion-icon class="text-orange-400" name="logo-twitter"></ion-icon>
+                    @omnifood_london
+                </div>
+            </div>        
+        </div>       
+    </section>
+
+    <section class="p-16 mt-12 text-white bg-fixed bg-center bg-cover bg-testimonial">
+        <div class="flex flex-col items-center justify-center w-4/5 pt-16 mx-auto">
+            <h1 class="mb-4 text-4xl">OUR CUSTOMERS CAN'T LIVE WITHOUT US</h1>
+            <hr class="w-48 border-2 border-orange-400">
+        </div>
+
+        <div class="flex justify-center mt-12">
+            <div class="w-1/5 mr-12 text-lg">
+                <blockquote>
+                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                    <cite class="flex">
+                        <img class="w-20 h-20 mt-8 rounded-full" src="img/customer-1.jpg" alt="Alberto Duncan">
+                        <p class="mt-16 ml-4">Alberto Duncan</p> 
+                    </cite>
+                </blockquote>  
+            </div>
+            <div class="w-1/5 mr-12 text-lg">
+                <blockquote>
+                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                    <cite class="flex">
+                        <img class="w-20 h-20 mt-8 rounded-full" src="img/customer-2.jpg" alt="Joana Silva">
+                        <p class="mt-16 ml-4">Joana Silva</p> 
+                    </cite>
+                </blockquote>  
+            </div>
+            <div class="w-1/5 text-lg">
+                <blockquote>
+                    I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    <cite class="flex">
+                        <img class="w-20 h-20 mt-8 rounded-full" src="img/customer-3.jpg" alt="Milton Chapman">
+                        <p class="mt-16 ml-4">Milton Chapman</p>  
+                    </cite>
+                </blockquote> 
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-12 pb-20 bg-slate-100">
+        <div class="flex flex-col items-center justify-center w-4/5 mx-auto">
+            <h1 class="mb-4 text-4xl">START EATING HEALTHY TODAY</h1>
+            <hr class="w-48 border-2 border-orange-400">
+        </div>
+
+        <div class="flex justify-around w-3/5 mx-auto mt-12">
+            <div class="">
+                <div class="bg-white w-80 h-96">
+                    <div class="p-4 rounded-t-lg bg-slate-200">
+                        <h3 class="text-2xl">Premium</h3>
+                        <p class="mt-4 text-6xl text-orange-400">399$ <span class="text-xl">/ month</span> </p>
+                        <p class="mt-4 text-xl">That’s only 13.30$ per meal</p>
+                    </div>
+                    <div class="pl-4">
+                        <ul class="pt-4">
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>1 meal every day</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="px-8 py-2 text-xl text-white bg-orange-400 border-2 border-orange-400 rounded-full">Sign up</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="">
+                <div class="bg-white w-80 h-96">
+                    <div class="p-4 rounded-t-lg bg-slate-200">
+                        <h3 class="text-2xl">Pro</h3>
+                        <p class="mt-4 text-6xl text-orange-400">149$ <span class="text-xl">/ month</span> </p>
+                        <p class="mt-4 text-xl">That’s only 14.90$ per meal</p>
+                    </div>
+                    <div class="pl-4">
+                        <ul class="pt-4">
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>1 meal 10 days/month</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="px-8 py-2 text-xl text-white bg-orange-400 border-2 border-orange-400 rounded-full ">Sign up</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="">
+                <div class="bg-white h-96 w-80">
+                    <div class="p-4 rounded-t-lg bg-slate-200">
+                        <h3 class="text-2xl">Starter</h3>
+                        <p class="mt-4 text-6xl text-orange-400">19$ <span class="text-xl">/ meal</span> </p>
+                        <p class="mt-4 text-xl">&nbsp;</p>
+                    </div>
+                    <div class="pl-4">
+                        <ul class="pt-4">
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>1 meal</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Order from 8 am to 12 pm</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="close-outline"></ion-icon>&nbsp;</li>
+                            <li class="text-lg"><ion-icon class="mr-2 text-orange-400" name="checkmark-outline"></ion-icon>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <a href="#" class="px-8 py-2 text-xl text-white bg-orange-400 border-2 border-orange-400 rounded-full">Sign up</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-12">
+        <div class="flex flex-col items-center justify-center w-4/5 mx-auto">
+            <h1 class="mb-4 text-4xl">WE'RE HAPPY TO HEAR FROM YOU</h1>
+            <hr class="w-48 border-2 border-orange-400">
+        </div>
+        
+        <div class="">
+            <form class="flex flex-col items-center w-4/5">
+                <div class="flex">
+                    <div class="">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="">
+                        <input type="text" name="Firstname" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="">
+                        <label for="find-us">How did you find us</label>
+                    </div>
+                    <div class="">
+                        <select name="find-us" id="find-us">
+                            <option value="Friends">Friends</option>
+                            <option value="Search">Search Engine</option>
+                            <option value="AD">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="">
+                        <label>Newsletter</label>
+                    </div>
+                    <div class="">
+                        <input type="checkbox" name="news" id="news" checked>Yes Please
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="">
+                        <input type="submit" value="Send It!">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+  
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
